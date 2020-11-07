@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>10 Referências | Fundamentos de Estatística para Ciência de Dados</title>
+  <meta name="description" content="Este é o livro da disciplina Fundamentos de Estatística para Ciência de Dados da PUCRS-UOL escrito no RStudio. Sinta-se à vontade para compartilhar e colaborar https://github.com/filipezabala/fdepcdd" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="10 Referências | Fundamentos de Estatística para Ciência de Dados" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Este é o livro da disciplina Fundamentos de Estatística para Ciência de Dados da PUCRS-UOL escrito no RStudio. Sinta-se à vontade para compartilhar e colaborar https://github.com/filipezabala/fdepcdd" />
+  <meta name="github-repo" content="filipezabala/fdepcdd" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="10 Referências | Fundamentos de Estatística para Ciência de Dados" />
+  
+  <meta name="twitter:description" content="Este é o livro da disciplina Fundamentos de Estatística para Ciência de Dados da PUCRS-UOL escrito no RStudio. Sinta-se à vontade para compartilhar e colaborar https://github.com/filipezabala/fdepcdd" />
+  
+
+<meta name="author" content="Filipe J. Zabala" />
+
+
+<meta name="date" content="2020-11-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="seriestemporais.html"/>
+
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="libs/rglwidgetClass-2/rgl.css" rel="stylesheet" />
+<script src="libs/rglwidgetClass-2/rglClass.src.js"></script>
+<script src="libs/CanvasMatrix4-2016/CanvasMatrix.src.js"></script>
+<script src="libs/rglWebGL-binding-0.100.54/rglWebGL.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="1" data-path="introducao.html"><a href="introducao.html"><i class="fa fa-check"></i><b>1</b> Introdução</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introducao.html"><a href="introducao.html#ferramentas"><i class="fa fa-check"></i><b>1.1</b> Ferramentas</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="introducao.html"><a href="introducao.html#r"><i class="fa fa-check"></i><b>1.1.1</b> R</a></li>
+<li class="chapter" data-level="1.1.2" data-path="introducao.html"><a href="introducao.html#rstudio"><i class="fa fa-check"></i><b>1.1.2</b> RStudio</a></li>
+<li class="chapter" data-level="1.1.3" data-path="introducao.html"><a href="introducao.html#python"><i class="fa fa-check"></i><b>1.1.3</b> Python</a></li>
+<li class="chapter" data-level="1.1.4" data-path="introducao.html"><a href="introducao.html#jasp"><i class="fa fa-check"></i><b>1.1.4</b> JASP</a></li>
+<li class="chapter" data-level="1.1.5" data-path="introducao.html"><a href="introducao.html#stan"><i class="fa fa-check"></i><b>1.1.5</b> Stan</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introducao.html"><a href="introducao.html#materiais-de-apoio"><i class="fa fa-check"></i><b>1.2</b> Materiais de apoio</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="introducao.html"><a href="introducao.html#página-do-professor-filipe-zabala"><i class="fa fa-check"></i><b>1.2.1</b> Página do professor Filipe Zabala</a></li>
+<li class="chapter" data-level="1.2.2" data-path="introducao.html"><a href="introducao.html#khan-academy"><i class="fa fa-check"></i><b>1.2.2</b> Khan Academy</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introducao.html"><a href="introducao.html#algarismos-e-numeros"><i class="fa fa-check"></i><b>1.3</b> Algarismos e Números</a></li>
+<li class="chapter" data-level="1.4" data-path="introducao.html"><a href="introducao.html#porcentagens-decimais-e-milhares"><i class="fa fa-check"></i><b>1.4</b> Porcentagens, Decimais e Milhares</a></li>
+<li class="chapter" data-level="1.5" data-path="introducao.html"><a href="introducao.html#o-senhor-x"><i class="fa fa-check"></i><b>1.5</b> O Senhor <span class="math inline">\(X\)</span></a></li>
+<li class="chapter" data-level="1.6" data-path="introducao.html"><a href="introducao.html#somatorio"><i class="fa fa-check"></i><b>1.6</b> Somatório</a></li>
+<li class="chapter" data-level="1.7" data-path="introducao.html"><a href="introducao.html#arredondamento-e-truncagem"><i class="fa fa-check"></i><b>1.7</b> Arredondamento e Truncagem</a></li>
+<li class="chapter" data-level="1.8" data-path="introducao.html"><a href="introducao.html#outros"><i class="fa fa-check"></i><b>1.8</b> Outros símbolos e expressões</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="introducao.html"><a href="introducao.html#alfabeto-grego"><i class="fa fa-check"></i><b>1.8.1</b> Alfabeto grego</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html"><i class="fa fa-check"></i><b>2</b> Estatística Descritiva</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#variáveis"><i class="fa fa-check"></i><b>2.1</b> Variáveis</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#variavel-qualitativa-nominal"><i class="fa fa-check"></i><b>2.1.1</b> Variável qualitativa nominal</a></li>
+<li class="chapter" data-level="2.1.2" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#variavel-qualitativa-ordinal"><i class="fa fa-check"></i><b>2.1.2</b> Variável qualitativa ordinal</a></li>
+<li class="chapter" data-level="2.1.3" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#variavel-quantitativa-discreta"><i class="fa fa-check"></i><b>2.1.3</b> Variável quantitativa discreta</a></li>
+<li class="chapter" data-level="2.1.4" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#variavel-quantitativa-continua"><i class="fa fa-check"></i><b>2.1.4</b> Variável quantitativa contínua</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#distribuicao-de-frequencia"><i class="fa fa-check"></i><b>2.2</b> Distribuição de Frequência</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#db-rol-eo"><i class="fa fa-check"></i><b>2.2.1</b> Dados brutos, Rol e Estatísticas de Ordem</a></li>
+<li class="chapter" data-level="2.2.2" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#tab-freq-univ-discr"><i class="fa fa-check"></i><b>2.2.2</b> Tabela de frequência univariada discreta</a></li>
+<li class="chapter" data-level="2.2.3" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#tab-freq-univ-cont"><i class="fa fa-check"></i><b>2.2.3</b> Tabela de frequência univariada contínua</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#posicao"><i class="fa fa-check"></i><b>2.3</b> Medidas de Posição (ou Localização)</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#minmax"><i class="fa fa-check"></i><b>2.3.1</b> Mínimo e Máximo</a></li>
+<li class="chapter" data-level="2.3.2" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#mas"><i class="fa fa-check"></i><b>2.3.2</b> Média (Aritmética Simples)</a></li>
+<li class="chapter" data-level="2.3.3" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#total"><i class="fa fa-check"></i><b>2.3.3</b> Total</a></li>
+<li class="chapter" data-level="2.3.4" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#mquadr"><i class="fa fa-check"></i><b>2.3.4</b> Média Quadrática</a></li>
+<li class="chapter" data-level="2.3.5" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#moda"><i class="fa fa-check"></i><b>2.3.5</b> Moda</a></li>
+<li class="chapter" data-level="2.3.6" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#separatrizes"><i class="fa fa-check"></i><b>2.3.6</b> Separatrizes</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#medidas-de-dispersão-ou-variabilidade"><i class="fa fa-check"></i><b>2.4</b> Medidas de Dispersão (ou Variabilidade)</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#amplitude"><i class="fa fa-check"></i><b>2.4.1</b> Amplitude</a></li>
+<li class="chapter" data-level="2.4.2" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#variância"><i class="fa fa-check"></i><b>2.4.2</b> Variância</a></li>
+<li class="chapter" data-level="2.4.3" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#desvio-padrão"><i class="fa fa-check"></i><b>2.4.3</b> Desvio Padrão</a></li>
+<li class="chapter" data-level="2.4.4" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#coeficiente-de-variação"><i class="fa fa-check"></i><b>2.4.4</b> Coeficiente de variação</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#outras-medidas"><i class="fa fa-check"></i><b>2.5</b> Outras medidas</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#assimetria-ou-obliquidade"><i class="fa fa-check"></i><b>2.5.1</b> Assimetria (ou Obliquidade)</a></li>
+<li class="chapter" data-level="2.5.2" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#curtose"><i class="fa fa-check"></i><b>2.5.2</b> Curtose</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#visualização"><i class="fa fa-check"></i><b>2.6</b> Visualização</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="estatistica-descritiva.html"><a href="estatistica-descritiva.html#menu-de-opções"><i class="fa fa-check"></i><b>2.6.1</b> Menu de opções</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probabilidade.html"><a href="probabilidade.html"><i class="fa fa-check"></i><b>3</b> Probabilidade</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probabilidade.html"><a href="probabilidade.html#propriedades"><i class="fa fa-check"></i><b>3.1</b> Propriedades</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="probabilidade.html"><a href="probabilidade.html#propriedades-fundamentais-axiomas-de-kolmogorov"><i class="fa fa-check"></i><b>3.1.1</b> Propriedades fundamentais (Axiomas de Kolmogorov)</a></li>
+<li class="chapter" data-level="3.1.2" data-path="probabilidade.html"><a href="probabilidade.html#propriedades-secundárias"><i class="fa fa-check"></i><b>3.1.2</b> Propriedades secundárias</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="probabilidade.html"><a href="probabilidade.html#r-como-um-conjunto-de-tabelas-estatísticas"><i class="fa fa-check"></i><b>3.2</b> R como um conjunto de tabelas estatísticas</a></li>
+<li class="chapter" data-level="3.3" data-path="probabilidade.html"><a href="probabilidade.html#distribuição-normal"><i class="fa fa-check"></i><b>3.3</b> Distribuição Normal</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="probabilidade.html"><a href="probabilidade.html#normal-univariada"><i class="fa fa-check"></i><b>3.3.1</b> Normal univariada</a></li>
+<li class="chapter" data-level="3.3.2" data-path="probabilidade.html"><a href="probabilidade.html#normal-bivariada"><i class="fa fa-check"></i><b>3.3.2</b> Normal bivariada</a></li>
+<li class="chapter" data-level="3.3.3" data-path="probabilidade.html"><a href="probabilidade.html#normal-multivariada"><i class="fa fa-check"></i><b>3.3.3</b> Normal multivariada</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="amostragem.html"><a href="amostragem.html"><i class="fa fa-check"></i><b>4</b> Amostragem</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="amostragem.html"><a href="amostragem.html#definições-básicas"><i class="fa fa-check"></i><b>4.1</b> Definições básicas</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="amostragem.html"><a href="amostragem.html#unidade-elementar"><i class="fa fa-check"></i><b>4.1.1</b> Unidade Elementar</a></li>
+<li class="chapter" data-level="4.1.2" data-path="amostragem.html"><a href="amostragem.html#unidade-amostral"><i class="fa fa-check"></i><b>4.1.2</b> Unidade Amostral</a></li>
+<li class="chapter" data-level="4.1.3" data-path="amostragem.html"><a href="amostragem.html#sistema-de-referências"><i class="fa fa-check"></i><b>4.1.3</b> Sistema de referências</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="amostragem.html"><a href="amostragem.html#universo-mathcalu"><i class="fa fa-check"></i><b>4.2</b> Universo <span class="math inline">\(\mathcal{U}\)</span></a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="amostragem.html"><a href="amostragem.html#parâmetros"><i class="fa fa-check"></i><b>4.2.1</b> Parâmetros</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="amostragem.html"><a href="amostragem.html#amostras"><i class="fa fa-check"></i><b>4.3</b> Amostras</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="amostragem.html"><a href="amostragem.html#plano-amostral"><i class="fa fa-check"></i><b>4.3.1</b> Plano Amostral</a></li>
+<li class="chapter" data-level="4.3.2" data-path="amostragem.html"><a href="amostragem.html#distribuições-amostrais"><i class="fa fa-check"></i><b>4.3.2</b> Distribuições amostrais</a></li>
+<li class="chapter" data-level="4.3.3" data-path="amostragem.html"><a href="amostragem.html#amostra-representativa"><i class="fa fa-check"></i><b>4.3.3</b> Amostra representativa</a></li>
+<li class="chapter" data-level="4.3.4" data-path="amostragem.html"><a href="amostragem.html#tipos-de-amostras"><i class="fa fa-check"></i><b>4.3.4</b> Tipos de amostras</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="amostragem.html"><a href="amostragem.html#principais-técnicas-de-amostragem"><i class="fa fa-check"></i><b>4.4</b> Principais técnicas de amostragem</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="amostragem.html"><a href="amostragem.html#amostragem-aleatória-simples"><i class="fa fa-check"></i><b>4.4.1</b> Amostragem Aleatória Simples</a></li>
+<li class="chapter" data-level="4.4.2" data-path="amostragem.html"><a href="amostragem.html#amostragem-sistemática"><i class="fa fa-check"></i><b>4.4.2</b> Amostragem Sistemática</a></li>
+<li class="chapter" data-level="4.4.3" data-path="amostragem.html"><a href="amostragem.html#amostragem-estratificada"><i class="fa fa-check"></i><b>4.4.3</b> Amostragem Estratificada</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="amostragem.html"><a href="amostragem.html#cálculo-do-tamanho-da-amostra"><i class="fa fa-check"></i><b>4.5</b> Cálculo do tamanho da amostra</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="amostragem.html"><a href="amostragem.html#média"><i class="fa fa-check"></i><b>4.5.1</b> Média</a></li>
+<li class="chapter" data-level="4.5.2" data-path="amostragem.html"><a href="amostragem.html#proporção"><i class="fa fa-check"></i><b>4.5.2</b> Proporção</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="amostragem.html"><a href="amostragem.html#para-saber-mais"><i class="fa fa-check"></i><b>4.6</b> Para saber mais</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="inferencia-classica.html"><a href="inferencia-classica.html"><i class="fa fa-check"></i><b>5</b> Inferência Clássica</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="inferencia-classica.html"><a href="inferencia-classica.html#estimação-pontual"><i class="fa fa-check"></i><b>5.1</b> Estimação Pontual</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="inferencia-classica.html"><a href="inferencia-classica.html#estimadores-e-suas-propriedades"><i class="fa fa-check"></i><b>5.1.1</b> Estimadores e suas propriedades</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="inferencia-classica.html"><a href="inferencia-classica.html#estimação-por-intervalo-de-confiança"><i class="fa fa-check"></i><b>5.2</b> (Estimação por) Intervalo de Confiança</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="inferencia-classica.html"><a href="inferencia-classica.html#média-1"><i class="fa fa-check"></i><b>5.2.1</b> Média</a></li>
+<li class="chapter" data-level="5.2.2" data-path="inferencia-classica.html"><a href="inferencia-classica.html#proporção-1"><i class="fa fa-check"></i><b>5.2.2</b> Proporção</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="inferencia-classica.html"><a href="inferencia-classica.html#estimação-por-teste-de-hipóteses"><i class="fa fa-check"></i><b>5.3</b> (Estimação por) Teste de Hipóteses</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="inferencia-classica.html"><a href="inferencia-classica.html#testes-paramétricos-univariados"><i class="fa fa-check"></i><b>5.3.1</b> Testes Paramétricos Univariados</a></li>
+<li class="chapter" data-level="5.3.2" data-path="inferencia-classica.html"><a href="inferencia-classica.html#testes-paramétricos-bivariados"><i class="fa fa-check"></i><b>5.3.2</b> Testes Paramétricos Bivariados</a></li>
+<li class="chapter" data-level="5.3.3" data-path="inferencia-classica.html"><a href="inferencia-classica.html#testes-paramétricos-multivariados"><i class="fa fa-check"></i><b>5.3.3</b> Testes Paramétricos Multivariados</a></li>
+<li class="chapter" data-level="5.3.4" data-path="inferencia-classica.html"><a href="inferencia-classica.html#testes-não-paramétricos-univariados"><i class="fa fa-check"></i><b>5.3.4</b> Testes Não Paramétricos Univariados</a></li>
+<li class="chapter" data-level="5.3.5" data-path="inferencia-classica.html"><a href="inferencia-classica.html#testes-não-paramétricos-bivariados"><i class="fa fa-check"></i><b>5.3.5</b> Testes Não Paramétricos Bivariados</a></li>
+<li class="chapter" data-level="5.3.6" data-path="inferencia-classica.html"><a href="inferencia-classica.html#testes-não-paramétricos-multivariados"><i class="fa fa-check"></i><b>5.3.6</b> Testes Não Paramétricos Multivariados</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="inferencia-classica.html"><a href="inferencia-classica.html#exercícios"><i class="fa fa-check"></i><b>5.4</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html"><i class="fa fa-check"></i><b>6</b> Inferência Bayesiana</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html#princípios-de-verossimilhança-suficiência-e-condicionalidade"><i class="fa fa-check"></i><b>6.1</b> Princípios de verossimilhança, suficiência e condicionalidade</a></li>
+<li class="chapter" data-level="6.2" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html#distribuição-a-priori"><i class="fa fa-check"></i><b>6.2</b> Distribuição a priori</a></li>
+<li class="chapter" data-level="6.3" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html#estimação-pontual-1"><i class="fa fa-check"></i><b>6.3</b> Estimação Pontual</a></li>
+<li class="chapter" data-level="6.4" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html#estimação-por-intervaloregiões-de-credibilidade"><i class="fa fa-check"></i><b>6.4</b> (Estimação por) Intervalo/Regiões de Credibilidade</a></li>
+<li class="chapter" data-level="6.5" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html#estimação-por-teste-de-hipóteses-1"><i class="fa fa-check"></i><b>6.5</b> (Estimação por) Teste de Hipóteses</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html#fatores-de-bayes"><i class="fa fa-check"></i><b>6.5.1</b> Fatores de Bayes</a></li>
+<li class="chapter" data-level="6.5.2" data-path="inferencia-bayesiana.html"><a href="inferencia-bayesiana.html#fbst---full-bayesian-significance-test"><i class="fa fa-check"></i><b>6.5.2</b> FBST - <em>Full Bayesian Significance Test</em></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelos-lineares.html"><a href="modelos-lineares.html"><i class="fa fa-check"></i><b>7</b> Modelos Lineares</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="modelos-lineares.html"><a href="modelos-lineares.html#correlacao"><i class="fa fa-check"></i><b>7.1</b> Correlação</a></li>
+<li class="chapter" data-level="7.2" data-path="modelos-lineares.html"><a href="modelos-lineares.html#regressão-linear-simples"><i class="fa fa-check"></i><b>7.2</b> Regressão Linear Simples</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="modelos-lineares.html"><a href="modelos-lineares.html#modelo"><i class="fa fa-check"></i><b>7.2.1</b> Modelo</a></li>
+<li class="chapter" data-level="7.2.2" data-path="modelos-lineares.html"><a href="modelos-lineares.html#estimativas-dos-parâmetros"><i class="fa fa-check"></i><b>7.2.2</b> Estimativas dos parâmetros</a></li>
+<li class="chapter" data-level="7.2.3" data-path="modelos-lineares.html"><a href="modelos-lineares.html#análise-de-diagnóstico"><i class="fa fa-check"></i><b>7.2.3</b> Análise de diagnóstico</a></li>
+<li class="chapter" data-level="7.2.4" data-path="modelos-lineares.html"><a href="modelos-lineares.html#modelo-rpo"><i class="fa fa-check"></i><b>7.2.4</b> Modelo RPO</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="modelos-lineares.html"><a href="modelos-lineares.html#regressão-linear-múltipla"><i class="fa fa-check"></i><b>7.3</b> Regressão Linear Múltipla</a></li>
+<li class="chapter" data-level="7.4" data-path="modelos-lineares.html"><a href="modelos-lineares.html#regressão-logística"><i class="fa fa-check"></i><b>7.4</b> Regressão Logística</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="modelos-lineares.html"><a href="modelos-lineares.html#variáveis-bináriasdicotômicas"><i class="fa fa-check"></i><b>7.4.1</b> Variáveis binárias/dicotômicas</a></li>
+<li class="chapter" data-level="7.4.2" data-path="modelos-lineares.html"><a href="modelos-lineares.html#o-modelo-de-regressão-logística"><i class="fa fa-check"></i><b>7.4.2</b> O modelo de regressão logística</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="aprendizadodemaquina.html"><a href="aprendizadodemaquina.html"><i class="fa fa-check"></i><b>8</b> Aprendizado de Máquina</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="aprendizadodemaquina.html"><a href="aprendizadodemaquina.html#análise-de-componentes-principais-pca"><i class="fa fa-check"></i><b>8.1</b> Análise de Componentes Principais (<em>PCA</em>)</a></li>
+<li class="chapter" data-level="8.2" data-path="aprendizadodemaquina.html"><a href="aprendizadodemaquina.html#técnicas-de-agrupamento"><i class="fa fa-check"></i><b>8.2</b> Técnicas de Agrupamento</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="aprendizadodemaquina.html"><a href="aprendizadodemaquina.html#medidas-de-similaridade-e-dissimilaridade"><i class="fa fa-check"></i><b>8.2.1</b> Medidas de similaridade e dissimilaridade</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="aprendizadodemaquina.html"><a href="aprendizadodemaquina.html#métodos-hierárquicos"><i class="fa fa-check"></i><b>8.3</b> Métodos hierárquicos</a></li>
+<li class="chapter" data-level="8.4" data-path="aprendizadodemaquina.html"><a href="aprendizadodemaquina.html#métodos-não-hierárquicos-de-particionamento"><i class="fa fa-check"></i><b>8.4</b> Métodos não hierárquicos (de particionamento)</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="aprendizadodemaquina.html"><a href="aprendizadodemaquina.html#k-médias"><i class="fa fa-check"></i><b>8.4.1</b> K-médias</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="seriestemporais.html"><a href="seriestemporais.html"><i class="fa fa-check"></i><b>9</b> Séries Temporais</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="seriestemporais.html"><a href="seriestemporais.html#impacto-causal"><i class="fa fa-check"></i><b>9.1</b> Impacto Causal</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i><b>10</b> Referências</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamentos de Estatística para Ciência de Dados</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="referências" class="section level1" number="10">
+<h1><span class="header-section-number">10</span> Referências</h1>
+
+<div id="refs" class="references hanging-indent">
+<div>
+<p>Agresti, Alan. 2007. <em>An Introduction to Categorical Data Analysis</em>. Wiley. <a href="https://mregresion.files.wordpress.com/2012/08/agresti-introduction-to-categorical-data.pdf">https://mregresion.files.wordpress.com/2012/08/agresti-introduction-to-categorical-data.pdf</a>.</p>
+</div>
+<div>
+<p>Akaike, Hirotugu. 1974. “A New Look at the Statistical Model Identification.” In <em>Selected Papers of Hirotugu Akaike</em>, 215–22. Springer.</p>
+</div>
+<div>
+<p>Bayes, Thomas. 1763. “An Essay Towards Solving a Problem in the Doctrine of Chances. By the Late Rev. Mr. Bayes, FRS Communicated by Mr. Price, in a Letter to John Canton, AMFR S.” <em>Philosophical Transactions of the Royal Society of London</em>, no. 53: 370–418. <a href="https://www.ias.ac.in/article/fulltext/reso/008/04/0080-0088">https://www.ias.ac.in/article/fulltext/reso/008/04/0080-0088</a>.</p>
+</div>
+<div>
+<p>Beasley, T Mark, and Randall E Schumacker. 1995. “Multiple Regression Approach to Analyzing Contingency Tables: Post Hoc and Planned Comparison Procedures.” <em>The Journal of Experimental Education</em> 64 (1): 79–93.</p>
+</div>
+<div>
+<p>Berger, James O. 1985. <em>Statistical Decision Theory and Bayesian Analysis</em>. 2nd ed. Springer Science &amp; Business Media. <a href="https://www.springer.com/gp/book/9780387960982">https://www.springer.com/gp/book/9780387960982</a>.</p>
+</div>
+<div>
+<p>Birnbaum, Allan. 1962. “On the Foundations of Statistical Inference.” <em>Journal of the American Statistical Association</em> 57 (298): 269–306. <a href="https://www.jstor.org/stable/2281640">https://www.jstor.org/stable/2281640</a>.</p>
+</div>
+<div>
+<p>Bishop, Christopher M. 1999. “Bayesian PCA.” In <em>Advances in Neural Information Processing Systems</em>, 382–88. <a href="https://papers.nips.cc/paper/1549-bayesian-pca.pdf">https://papers.nips.cc/paper/1549-bayesian-pca.pdf</a>.</p>
+</div>
+<div>
+<p>Bolfarine, Heleno, and Wilton de Oliveira Bussab. 2005. <em>Elementos de Amostragem</em>. Editora Blucher. <a href="https://www.blucher.com.br/livro/detalhes/elementos-de-amostragem-331">https://www.blucher.com.br/livro/detalhes/elementos-de-amostragem-331</a>.</p>
+</div>
+<div>
+<p>Champely, Stephane. 2020. <em>Pwr: Basic Functions for Power Analysis</em>. <a href="https://CRAN.R-project.org/package=pwr">https://CRAN.R-project.org/package=pwr</a>.</p>
+</div>
+<div>
+<p>Chow, Shein-Chung, Hansheng Wang, and Jun Shao. 2007. <em>Sample Size Calculations in Clinical Rsesearch, Second Edition</em>. CRC press. <a href="https://books.google.com.br/books?id=ju-sojS3sa0C&amp;printsec=frontcover&amp;hl=pt-BR#v=onepage&amp;q&amp;f=false">https://books.google.com.br/books?id=ju-sojS3sa0C&amp;printsec=frontcover&amp;hl=pt-BR#v=onepage&amp;q&amp;f=false</a>.</p>
+</div>
+<div>
+<p>DeGroot, Morris H, and Mark J Schervish. 2012. <em>Probability and Statistics</em>. Pearson Education.</p>
+</div>
+<div>
+<p>Dua, Dheeru, and Casey Graff. 2019. “UCI Machine Learning Repository.” University of California, Irvine, School of Information; Computer Sciences. <a href="http://archive.ics.uci.edu/ml">http://archive.ics.uci.edu/ml</a>.</p>
+</div>
+<div>
+<p>Ebbert, Daniel. 2019. <em>Chisq.posthoc.test: A Post Hoc Analysis for Pearson’s Chi-Squared Test for Count Data</em>. <a href="https://CRAN.R-project.org/package=chisq.posthoc.test">https://CRAN.R-project.org/package=chisq.posthoc.test</a>.</p>
+</div>
+<div>
+<p>Efroymson, MA. 1960. “Multiple Regression Analysis.” <em>Mathematical Methods for Digital Computers</em>, 191–203.</p>
+</div>
+<div>
+<p>Finetti, Bruno de. 1974. “Theory of Probability. A Critical Introductory Treatment,(translation by a. Machi and Afm Smith of 1970 Book) 2 Volumes.” Wiley ISBN.</p>
+</div>
+<div>
+<p>Fisher, Ronald A. 1936. “Has Mendel’s Work Been Rediscovered?” <em>Annals of Science</em> 1 (2): 115–37. <a href="https://www.tandfonline.com/doi/abs/10.1080/00033793600200111">https://www.tandfonline.com/doi/abs/10.1080/00033793600200111</a>.</p>
+</div>
+<div>
+<p>Fisher, Ronald Aylmer. 1925. <em>Statistical Methods for Research Workers.</em> Oliver; Boyd, Edinburgh; London.</p>
+</div>
+<div>
+<p>Forgy, Edward W. 1965. “Cluster Analysis of Multivariate Data: Efficiency Versus Interpretability of Classifications.” <em>Biometrics</em> 21: 768–69.</p>
+</div>
+<div>
+<p>Franz Faul, Albert-Geroge Lang, Edgard Erdfelder, and Axel Buchner. 2007. “G*Power 3: A Flexible Statistical Power Analysis Program for the Social, Behavioral, and Biomedical Sciences.” <em>Behavior Research Methods, 39, 175-191</em>. <a href="https://www.psychologie.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Psychologie/AAP/gpower/GPower3-BRM-Paper.pdf">https://www.psychologie.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Psychologie/AAP/gpower/GPower3-BRM-Paper.pdf</a>.</p>
+</div>
+<div>
+<p>Franz Faul, Axel Buchner, Edgard Erdfelder, and Albert-Geroge Lang. 2009. “Statistical Power Analyses Using G*Power 3.1: Tests for Correlation and Regression Analyses.” <em>Behavior Research Methods, 41, 1149-1160</em>. <a href="https://www.psychologie.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Psychologie/AAP/gpower/GPower31-BRM-Paper.pdf">https://www.psychologie.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Psychologie/AAP/gpower/GPower31-BRM-Paper.pdf</a>.</p>
+</div>
+<div>
+<p>Freedman, David, and Persi Diaconis. 1981. “On the Histogram as a Density Estimator: L2 Theory.” <em>Zeitschrift Für Wahrscheinlichkeitstheorie Und Verwandte Gebiete</em> 57 (4): 453–76. <a href="https://link.springer.com/content/pdf/10.1007/BF01025868.pdf">https://link.springer.com/content/pdf/10.1007/BF01025868.pdf</a>.</p>
+</div>
+<div>
+<p>Gannon, Mark Andrew, Carlos Alberto de Bragança Pereira, and Adriano Polpo. 2019. “Blending Bayesian and Classical Tools to Define Optimal Sample-Size-Dependent Significance Levels.” <em>The American Statistician</em> 73 (sup1): 213–22. <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2018.1518268">https://www.tandfonline.com/doi/full/10.1080/00031305.2018.1518268</a>.</p>
+</div>
+<div>
+<p>Hartigan, John A. 1975. <em>Clustering Algorithms</em>. Wiley. <a href="https://people.inf.elte.hu/fekete/algoritmusok_msc/klaszterezes/John%20A.%20Hartigan-Clustering%20Algorithms-John%20Wiley%20&amp;%20Sons%20(1975).pdf">https://people.inf.elte.hu/fekete/algoritmusok_msc/klaszterezes/John%20A.%20Hartigan-Clustering%20Algorithms-John%20Wiley%20&amp;%20Sons%20(1975).pdf</a>.</p>
+</div>
+<div>
+<p>Hartigan, John A, and Manchek A Wong. 1979. “Algorithm AS 136: A K-Means Clustering Algorithm.” <em>Journal of the Royal Statistical Society. Series C (Applied Statistics)</em> 28 (1): 100–108. <a href="https://www.labri.fr/perso/bpinaud/userfiles/downloads/hartigan_1979_kmeans.pdf">https://www.labri.fr/perso/bpinaud/userfiles/downloads/hartigan_1979_kmeans.pdf</a>.</p>
+</div>
+<div>
+<p>Hartl, Daniel L, and Daniel J Fairbanks. 2007. “Mud Sticks: On the Alleged Falsification of Mendel’s Data.” <em>Genetics</em> 175 (3): 975–79. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1840063/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1840063/</a>.</p>
+</div>
+<div>
+<p>Hotelling, Harold. 1933. “Analysis of a Complex of Statistical Variables into Principal Components.” <em>Journal of Educational Psychology</em> 24 (6): 417. <a href="https://psycnet.apa.org/fulltext/1934-00645-001.pdf">https://psycnet.apa.org/fulltext/1934-00645-001.pdf</a>.</p>
+</div>
+<div>
+<p>Hyndman, Rob. 2020. <em>Fpp2: Data for "Forecasting: Principles and Practice" (2nd Edition)</em>. <a href="https://CRAN.R-project.org/package=fpp2">https://CRAN.R-project.org/package=fpp2</a>.</p>
+</div>
+<div>
+<p>Hyndman, Rob J. 1995. “The Problem with Sturges Rule for Constructing Histograms.” <a href="http://robjhyndman.com/papers/sturges.pdf">http://robjhyndman.com/papers/sturges.pdf</a>.</p>
+</div>
+<div>
+<p>Hyndman, Rob J, and George Athanasopoulos. 2018. <em>Forecasting: Principles and Practice</em>. OTexts. <a href="https://otexts.com/fpp2/">https://otexts.com/fpp2/</a>.</p>
+</div>
+<div>
+<p>Izbicki, Rafael, and Tiago Mendonça dos Santos. 2020. <em>Aprendizado de Máquina: Uma Abordagem Estatística</em>. <a href="http://www.rizbicki.ufscar.br/ame/">http://www.rizbicki.ufscar.br/ame/</a>.</p>
+</div>
+<div>
+<p>James, B. R. 2010. “Probabilidade: Um Curso Em Nível Intermediário, Coleção Euclides.” <em>Rio de Janeiro. IMPA, 3a. Edição</em>. <a href="https://loja.sbm.org.br/index.php/colecoes/impa/colecao-projeto-euclides/probabilidade-um-curso-em-nivel-intermediario.html">https://loja.sbm.org.br/index.php/colecoes/impa/colecao-projeto-euclides/probabilidade-um-curso-em-nivel-intermediario.html</a>.</p>
+</div>
+<div>
+<p>Jessen, Raymond James. 1978. <em>Statistical Survey Techniques</em>. Wiley New York.</p>
+</div>
+<div>
+<p>Kass, Robert E, and Adrian E Raftery. 1995. “Bayes Factors.” <em>Journal of the American Statistical Association</em> 90 (430): 773–95. <a href="http://xyala.cap.ed.ac.uk/teaching/tutorials/phylogenetics/Bayesian_Workshop/PDFs/Kass%20and%20Raftery%201995.pdf">http://xyala.cap.ed.ac.uk/teaching/tutorials/phylogenetics/Bayesian_Workshop/PDFs/Kass%20and%20Raftery%201995.pdf</a>.</p>
+</div>
+<div>
+<p>Kotz, S., and S. Nadarajah. 2000. <em>Extreme Value Distributions</em>. World Scientific. <a href="https://books.google.com.br/books/about/Extreme_Value_Distributions.html?id=ZPW3CgAAQBAJ&amp;redir_esc=y">https://books.google.com.br/books/about/Extreme_Value_Distributions.html?id=ZPW3CgAAQBAJ&amp;redir_esc=y</a>.</p>
+</div>
+<div>
+<p>Laplace, Pierre-Simon. 1825. “Essai Philosophique Sur Les Probabilités (1814).” <em>Printed as a Preface to Théorie Analytique Des Probabilités in the Oeuvres Complètes Edition</em>.</p>
+</div>
+<div>
+<p>Lindley, Dennis V, and LD Phillips. 1976. “Inference for a Bernoulli Process (a Bayesian View).” <em>The American Statistician</em> 30 (3): 112–19. <a href="https://www.jstor.org/stable/2683855">https://www.jstor.org/stable/2683855</a>.</p>
+</div>
+<div>
+<p>Lloyd, Stuart P. 1957. “Least Squares Quantization in PCM.” <em>Tecnical Note at Bell Laboratories in 1957, Published After in IEEE Transactions on Information Theory in 1982</em> 28 (2): 129–37. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1056489">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1056489</a>.</p>
+</div>
+<div>
+<p>MacQueen, James, and others. 1967. “Some Methods for Classification and Analysis of Multivariate Observations.” In <em>Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability</em>, 1:281–97. 14. Oakland, CA, USA. <a href="https://sci2s.ugr.es/keel/pdf/algorithm/congreso/1967-MacQueen-MSP.pdf">https://sci2s.ugr.es/keel/pdf/algorithm/congreso/1967-MacQueen-MSP.pdf</a>.</p>
+</div>
+<div>
+<p>McCullagh, Peter, and John Ashworth Nelder. 1989. <em>Generalized Linear Models</em>. <em>Chapman Hall, London</em>. 2nd ed. <a href="http://www.utstat.toronto.edu/~brunner/oldclass/2201s11/readings/glmbook.pdf">http://www.utstat.toronto.edu/~brunner/oldclass/2201s11/readings/glmbook.pdf</a>.</p>
+</div>
+<div>
+<p>Milošević, Bojana, and Marko Obradović. 2018. “Comparison of Efficiencies of Some Symmetry Tests Around an Unknown Centre.” <em>Statistics</em> 53 (1): 43–57. <a href="https://doi.org/10.1080/02331888.2018.1526938">https://doi.org/10.1080/02331888.2018.1526938</a>.</p>
+</div>
+<div>
+<p>Morris, David E, Jeremy E Oakley, and John A Crowe. 2014. “A Web-Based Tool for Eliciting Probability Distributions from Experts.” <em>Environmental Modelling &amp; Software</em> 52: 1–4. <a href="http://dx.doi.org/10.1016/j.envsoft.2013.10.010">http://dx.doi.org/10.1016/j.envsoft.2013.10.010</a>.</p>
+</div>
+<div>
+<p>Neter, John, Michael H Kutner, Christopher J Nachtsheim, and William Wasserman. 2005. <em>Applied Linear Statistical Models</em>. 5th ed. McGraw Hill/Irwin New York. <a href="https://mysite.science.uottawa.ca/rkulik/mat3378/mat3378-textbook.pdf">https://mysite.science.uottawa.ca/rkulik/mat3378/mat3378-textbook.pdf</a>.</p>
+</div>
+<div>
+<p>Novitski, E. 2004. “On Fisher’s Criticism of Mendel’s Results with the Garden Pea.” <em>Genetics</em> 166 (3): 1133–6. <a href="https://www.genetics.org/content/genetics/166/3/1133.full.pdf">https://www.genetics.org/content/genetics/166/3/1133.full.pdf</a>.</p>
+</div>
+<div>
+<p>Paula, Gilberto Alvarenga. 2013. <em>Modelos de Regressão: Com Apoio Computacional</em>. IME-USP São Paulo. <a href="https://www.ime.usp.br/~giapaula/texto_2013.pdf">https://www.ime.usp.br/~giapaula/texto_2013.pdf</a>.</p>
+</div>
+<div>
+<p>Paulino, Carlos Daniel Mimoso, Maria Antónia Amaral Turkman, and Bento Murteira. 2003. <em>Estatı́stica Bayesiana</em>. Fundação Calouste Gulbenkian, Lisboa. <a href="http://primo-pmtna01.hosted.exlibrisgroup.com/PUC01:PUC01:puc01000334509">http://primo-pmtna01.hosted.exlibrisgroup.com/PUC01:PUC01:puc01000334509</a>.</p>
+</div>
+<div>
+<p>Pearson, Karl. 1901. “On Lines and Planes of Closest Fit to Systems of Points in Space.” <em>Philosophical Magazine</em> 2 (11): 559–72. <a href="http://pca.narod.ru/pearson1901.pdf">http://pca.narod.ru/pearson1901.pdf</a>.</p>
+</div>
+<div>
+<p>Pereira, Carlos A de B, Julio Michael Stern, Sergio Wechsler, and others. 2008. “Can a Significance Test Be Genuinely Bayesian?” <em>Bayesian Analysis</em> 3 (1): 79–100. <a href="https://projecteuclid.org/download/pdf_1/euclid.ba/1340370562">https://projecteuclid.org/download/pdf_1/euclid.ba/1340370562</a>.</p>
+</div>
+<div>
+<p>Pereira, Carlos Alberto de Bragança, and Julio Michael Stern. 1999. “Evidence and Credibility: Full Bayesian Significance Test for Precise Hypotheses.” <em>Entropy</em> 1 (4): 99–110. <a href="https://www.mdpi.com/1099-4300/1/4/99">https://www.mdpi.com/1099-4300/1/4/99</a>.</p>
+</div>
+<div>
+<p>Pereira, Carlos Alberto de Bragança, and Sergio Wechsler. 1993. “On the Concept of P-Value.” <em>Brazilian Journal of Probability and Statistics</em>, 159–77. <a href="https://www.jstor.org/stable/pdf/43600839.pdf">https://www.jstor.org/stable/pdf/43600839.pdf</a>.</p>
+</div>
+<div>
+<p>Pereira, Carlos Alberto de Brgança, and Julio Michael Stern. 2020. “The E-Value: A Fully Bayesian Significance Measure for Precise Statistical Hypotheses and Its Research Program.” <a href="https://doi.org/10.1007/s40863-020-00171-7">https://doi.org/10.1007/s40863-020-00171-7</a>.</p>
+</div>
+<div>
+<p>Press, S James. 2003. <em>Subjective and Objective Bayesian Statistics: Principles, Models, and Applications, 2nd. Edition</em>. John Wiley &amp; Sons. <a href="http://primo-pmtna01.hosted.exlibrisgroup.com/PUC01:PUC01:oclc(OCoLC)587388980">http://primo-pmtna01.hosted.exlibrisgroup.com/PUC01:PUC01:oclc(OCoLC)587388980</a>.</p>
+</div>
+<div>
+<p>Rousseeuw, Peter J, and L Kaufman. 1990. “Finding Groups in Data.” <em>Hoboken: Wiley Online Library</em>. <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470316801">https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470316801</a>.</p>
+</div>
+<div>
+<p>Savage, Leonard J, George Barnard, Jerome Cornfield, Irwin Bross, IJ Good, DV Lindley, CW Clunies-Ross, et al. 1962. “On the Foundations of Statistical Inference: Discussion.” <em>Journal of the American Statistical Association</em> 57 (298): 307–26. <a href="https://www.jstor.org/stable/2281641">https://www.jstor.org/stable/2281641</a>.</p>
+</div>
+<div>
+<p>Scott, David W. 1979. “On Optimal and Data-Based Histograms.” <em>Biometrika</em> 66 (3): 605–10. <a href="https://www.jstor.org/stable/2335182">https://www.jstor.org/stable/2335182</a>.</p>
+</div>
+<div>
+<p>Sheskin, David J. 2011. <em>Handbook of Parametric and Nonparametric Statistical Procedures, 5th Ed.</em> Chapman &amp; Hall/CRC, Boca Raton, FL.</p>
+</div>
+<div>
+<p>Sokal, Robert R, and F James Rohlf. 1962. “The Comparison of Dendrograms by Objective Methods.” <em>Taxon</em>, 33–40. <a href="https://www.jstor.org/stable/pdf/1217208.pdf">https://www.jstor.org/stable/pdf/1217208.pdf</a>.</p>
+</div>
+<div>
+<p>Sturges, Herbert A. 1926. “The Choice of a Class Interval.” <em>Journal of the American Statistical Association</em> 21 (153): 65–66.</p>
+</div>
+<div>
+<p>Thorndike, Robert L. 1953. “Who Belongs in the Family?” <em>Psychometrika</em> 18 (4): 267–76. <a href="https://link.springer.com/content/pdf/10.1007%2FBF02289263.pdf">https://link.springer.com/content/pdf/10.1007%2FBF02289263.pdf</a>.</p>
+</div>
+<div>
+<p>Tibshirani, Robert, Guenther Walther, and Trevor Hastie. 2001. “Estimating the Number of Clusters in a Data Set via the Gap Statistic.” <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> 63 (2): 411–23. <a href="http://web.stanford.edu/~hastie/Papers/gap.pdf">http://web.stanford.edu/~hastie/Papers/gap.pdf</a>.</p>
+</div>
+<div>
+<p>Tsanas, Athanasios, and Angeliki Xifara. 2012. “Accurate Quantitative Estimation of Energy Performance of Residential Buildings Using Statistical Machine Learning Tools.” <em>Energy and Buildings</em> 49: 560–67. <a href="http://people.maths.ox.ac.uk/tsanas/Preprints/ENB2012.pdf">http://people.maths.ox.ac.uk/tsanas/Preprints/ENB2012.pdf</a>.</p>
+</div>
+<div>
+<p>Tufte, Edward R. 1993. “Envisioning Information.”</p>
+</div>
+<div>
+<p>———. 2006. <em>Beautiful Evidence</em>. Graphis Pr.</p>
+</div>
+<div>
+<p>Tufte, Edward R, and Peter R Graves-Morris. 1983. <em>The Visual Display of Quantitative Information</em>. Vol. 2. 9. Graphics press Cheshire, CT. <a href="https://www.cs.rug.nl/svcg/uploads/VisualAnalytics/Tufte01-2.pdf">https://www.cs.rug.nl/svcg/uploads/VisualAnalytics/Tufte01-2.pdf</a>.</p>
+</div>
+<div>
+<p>Tufte, Edward R, Susan R McKay, Wolfgang Christian, and James R Matey. 1998. “Visual Explanations: Images and Quantities, Evidence and Narrative.” American Institute of Physics.</p>
+</div>
+<div>
+<p>Venables, William N, David M Smith, R Development Core Team, and others. 2020. “An Introduction to R.” Citeseer. <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf</a>.</p>
+</div>
+<div>
+<p>Wechsler, Sérgio, Carlos Alberto de Bragança Pereira, and P. C. F. Marques. 2008. “Birnbaum’s Theorem Redux.” <a href="https://www.ime.usp.br/~pmarques/papers/redux.pdf">https://www.ime.usp.br/~pmarques/papers/redux.pdf</a>.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="seriestemporais.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

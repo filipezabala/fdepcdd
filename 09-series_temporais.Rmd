@@ -1,0 +1,38 @@
+# Séries Temporais {#seriestemporais}
+
+Uma *série temporal* é um conjunto de dados observado no tempo. [@hyndman2018forecasting] trazem uma compilação dos principais e mais recentes métodos da literatura, programados na biblioteca `fpp2` de [@hyndman2020fpp2]. A seguir está o código `fits`, escrito com algumas funções desta biblioteca, de maneira a utilizar os seguintes métodos:
+
+- [ARIMA](https://otexts.com/fpp2/arima.html) (*AutoRegressive Integrated Moving Average*), função [`auto.arima`](https://www.rdocumentation.org/packages/forecast/versions/8.7/topics/auto.arima)  
+- [ETS](https://otexts.com/fpp2/ets.html) (Modelo de espaço de estados com suavização exponencial), função [`ets`](https://www.rdocumentation.org/packages/forecast/versions/8.7/topics/ets)  
+- [TBATS](https://otexts.com/fpp2/complexseasonality.html) (Modelo de espaço de estados com suavização exponencial com transformação Box-Cox, erros ARMA e componentes sazonais e de tendência), função [`tbats`](https://www.rdocumentation.org/packages/forecast/versions/8.7/topics/tbats)  
+- [NNETAR](https://otexts.com/fpp2/nnetar.html) (Rede neural autorregressiva), função [`nnetar`](https://www.rdocumentation.org/packages/forecast/versions/8.7/topics/nnetar)
+
+```{r}
+# calling package
+library(jurimetrics)
+# example
+fits(livestock)
+```
+
+```{exercise}
+Considere a função `fits`.  
+a) Avalie os parâmetros da função a partir do código.  
+b) Aplique nos bancos de dados `h02` e `gas`, utliizando os parâmetros que considerar mais adequados.  
+```
+
+```{exercise}
+Considere o banco de dados do índice Dow Jones disponível em https://archive.ics.uci.edu/ml/datasets/Dow+Jones+Index, lido com o código abaixo.
+```
+```{r}
+url1 <- 'https://archive.ics.uci.edu/ml/machine-learning-databases/00312/dow_jones_index.zip'
+download.file(url1, 'temp.zip', mode = 'wb')
+dat <- suppressMessages(read_csv('temp.zip'))
+st <- ts(dat$percent_change_next_weeks_price)
+```
+a. Modele e projete a série `percent_change_next_weeks_price` através da função `fits`. Busque pelos melhores modelos alterando os parâmetros da função, tais como `train` e `max.points`.  
+b. Avalie outras colunas do banco de dados e repita as operações do item a.  
+
+## Impacto Causal
+- http://google.github.io/CausalImpact/CausalImpact.html
+- https://research.google/pubs/pub41854/
+- https://github.com/klarsen1/MarketMatching

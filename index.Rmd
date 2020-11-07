@@ -1,0 +1,43 @@
+--- 
+title: "Fundamentos de Estatística para Ciência de Dados"
+author: "Filipe J. Zabala"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+header-includes:
+  - \usepackage{amsmath} # \dfrac, \numberwithin
+  - \usepackage{wasysym} # \smiley, notas musicais, masculino e feminino
+pandoc: --toc
+link-citations: yes
+github-repo: filipezabala/fdepcdd
+description: "Este é o livro da disciplina Fundamentos de Estatística para Ciência de Dados da PUCRS-UOL escrito no RStudio. Sinta-se à vontade para compartilhar e colaborar https://github.com/filipezabala/fdepcdd"
+---
+
+# Prefácio {-}
+
+*Há dois motivos* para ler este texto: ($i$) você deseja se tornar um profissional qualificado e entende que o ferramental estatístico pode auxiliar em suas decisões futuras ou ($ii$) você foi obrigado. De toda forma sugere-se a leitura deste[^material][^licenca] e de outros materiais de apoio ao longo do curso[^exercicios] praticando através de exercícios de fixação. Este texto consiste em declarações tão verídicas quanto o possível para a linguagem humana usual.
+<br><br>
+
+*Jingle do Livro*[^tom]  
+
+Leia este livro  
+É uma pesquisa paciente  
+Cada linha deste texto  
+No papel ou virtualmente  
+Fará você ficar  
+Ao menos inteligente
+
+[^material]: Este material foi desenvolvido nos ambientes [RStudio v1.4.904](https://www.rstudio.com/products/rstudio/download/preview/) e [R 4.0.3](https://www.r-project.org/) baseado no pacote [bookdown](https://bookdown.org/), disponível em [\texttt{github.com/filipezabala/fdepcdd}](https://github.com/filipezabala/fdepcdd).
+[^licenca]: Este material está sob a licença [Creative Commons de Atribuição 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.pt_BR). Você tem o direito de compartilhar -- copiar e redistribuir o material em qualquer suporte ou formato -- e adaptar -- remixar, transformar, e criar a partir do material para qualquer fim, mesmo que comercial. Você deve dar o crédito apropriado, prover um link para a licença e indicar se mudanças foram feitas. Você deve fazê-lo em qualquer circunstância razoável, mas de nenhuma maneira que sugira que o licenciante apoia você ou o seu uso. Você não pode aplicar termos jurídicos ou medidas de caráter tecnológico que restrinjam legalmente outros de fazerem algo que a licença permita. Mais detalhes em [creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode).
+[^exercicios]: [pt.khanacademy.org](https://pt.khanacademy.org)
+[^tom]: 'Compre este disco / É uma pesquisa paciente / Cada volta da agulha / Pelo sulco docemente / Fará você ficar / Mais feliz e inteligente'. *Jingle do Disco* de Tom Zé, do álbum *1992 The Hips of Tradition*.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
