@@ -353,7 +353,7 @@ MASS::fractions(prop.table(tabs)) # distribuição amostral de h(x) aplicada na 
 ```
 
 ```{example, aas-R-arr}
-As resoluçãos dos Exemplos \@ref(exm:aass) e \@ref(exm:comb) podem ser implementadas no pacote [`arrangements`](https://cran.r-project.org/web/packages/arrangements/) do R. Note que são obtidas as amostras via AASs através da função `permutations` e as amostras por combinação, sem qualquer tipo de repetição, pela função `combinations`.
+As resoluções dos Exemplos \@ref(exm:aass) e \@ref(exm:comb) podem ser implementadas no pacote [`arrangements`](https://cran.r-project.org/web/packages/arrangements/) do R. Note que são obtidas as amostras via AASs através da função `permutations` e as amostras por combinação, sem qualquer tipo de repetição, pela função `combinations`.
 ```
 
 ```{r}
