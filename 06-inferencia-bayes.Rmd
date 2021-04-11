@@ -2,13 +2,13 @@
 O paradigma da *inferência bayesiana* tem suas origens no artigo póstumo de [@bayes1763essay], comunicado por seu amigo Richard Price. As derivações das ideias de Bayes são extensas e profundas matemática e filosoficamente, discutidas por grandes nomes da Ciência em incontáveis livros, artigos e compilações ao longo destes mais de 250 anos. Desta forma entende-se que a melhor abordagem para este material é indicar o estado-da-arte da aplicação bayesiana considerando referências consagradas disponíveis online ou na bilbioteca da PUCRS.
 
 ```{exercise}
-Assita aos vídeos [The Bayesian Trap](https://www.youtube.com/watch?v=R13BD8qKeTg&vl=en) e [Bayes theorem](https://www.youtube.com/watch?v=HZGCoVF3YvM). Lembre que você pode ativar a legenda (botão CC) e alterar a língua nas configurações (ícone de engrenagem > legendas). $\\$
+Assista aos vídeos [The Bayesian Trap](https://www.youtube.com/watch?v=R13BD8qKeTg&vl=en) e [Bayes theorem](https://www.youtube.com/watch?v=HZGCoVF3YvM). Lembre que você pode ativar a legenda (botão CC) e alterar a língua nas configurações (ícone de engrenagem > legendas). $\\$
 ```
 
 <!-- Na abordagem *bayesiana* a estimação pontual é similar à clássica, mas quando feita por intervalos é chamada (estimação por) *Intervalo de Credibilidade* (IC/ICr). Os testes de hipóteses bayesianos têm o mesmo objetivo dos TH da abordagem clássica, que é decidir se um parâmetro ou conjunto de parâmetros pertencem a $\Theta_0$ ou $\Theta_1$, porém garantindo a não violação do *princípio da verossimilhança*. -->
 
 <!-- ## Softwares -->
-Um dos principais motivos dos avanços recentes na pesquisa em estatística bayesiana é a crescente facilidade no acesso a recursos computacionais, tanto de hardware quanto de software. Na linguagem R existem muitas bibliotecas para aplicação bayesiana. O [CRAN Task View](https://cran.r-project.org/web/views/)[^ctv] de [inferência bayesiana](https://cran.r-project.org/view=Bayesian) fornece um compêndio atualizado dos pacotes relacionados ao assunto.
+Um dos principais motivos dos avanços recentes na pesquisa em eAssita statística bayesiana é a crescente facilidade no acesso a recursos computacionais, tanto de hardware quanto de software. Na linguagem R existem muitas bibliotecas para aplicação bayesiana. O [CRAN Task View](https://cran.r-project.org/web/views/)[^ctv] de [inferência bayesiana](https://cran.r-project.org/view=Bayesian) fornece um compêndio atualizado dos pacotes relacionados ao assunto.
 
 [^ctv]: Segundo a documentação oficial do R, os *CRAN Task Views* ('Visualizadores de Tarefa da Rede Abrangente de Arquivos R', em tradução livre) têm como objetivo fornecer alguma orientação sobre quais pacotes no CRAN são relevantes para tarefas relacionadas a um determinado tópico. Eles fornecem uma breve visão geral dos pacotes incluídos têm como objetivo ter um foco nítido para que seja suficientemente claro quais pacotes devem ser incluídos (ou excluídos) - e não têm a intenção de endossar os "melhores" pacotes para uma determinada tarefa.
 
